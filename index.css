@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+html {font-size: 20px; scroll-behavior: smooth;}
+body {font-size: 1rem;}
+
+header {background: #f6f5ef; border-top: 2px solid #000;}
+header > div {position: relative; width: 54.5rem; margin: 0 auto;}
+header > div:after {content: ""; display: block; clear: both;}
+header > div h1 {float: left; padding: 1.1rem 0 1.2rem;}
+header > div nav {float: right; padding: 3.4rem 0 0 0;}
+header > div nav > ul > li {float: left;}
+header > div nav > ul > li > a {display: block; font-size: .7rem; color: #333; padding: .75rem 1.25rem 0; height: 2.6rem; line-height: 100%; transition: all .5s;}
+header > div .spot {position: absolute; right: 2.25rem; top: 1rem;}
+header > div .spot li {float: left; position: relative;}
+header > div .spot li a {padding: 0 .75rem; font-size: .7rem; color: #333; line-height: 100%;}
+header > div .spot li ~ li a:after {content: ""; position: absolute; left: 0; top: 50%; transform: translateY(-25%); width: 1px; height: .6rem; background: #e5e5e5;}
+header > div .spot li:last-child a:after {display: none;}
+header > div .spot li:last-child a {display: block; padding: 0; width: 1.7rem; height: 1.7rem; text-align: center; line-height: 1.7rem; font-size: 0; color: transparent; background: #fff; border: 1px solid #ccc; border-radius: 0.25rem;}
+header > div .spot li:last-child a:before {content: "\e97a"; font-family: 'xeicon'; font-size: 1.2rem; color: #000;}
+header > div .spot li a:hover {text-decoration: underline;}
+header > div .spot i {display: none;}
+header .total {display: none;}
+nav ul li a:hover {background: #2c2a29; color: #5f8c05; text-decoration: underline;}
+
+.coffee_sub,
+.menu_sub,
+.store_sub,
+.responsibility_sub,
+.msr_sub,
+.new_sub {position: absolute; width: 100%; background: #2c2a29; font-size: .7rem; left: 0; z-index: 9; display: none;}
+
+.coffee_sub > div,
+.menu_sub > div,
+.store_sub > div,
+.responsibility_sub > div,
+.msr_sub > div,
+.new_sub > div {width: 54.5rem; margin: 0 auto; display: flex; justify-content: space-between;}
+
+.coffee_sub .sub,
+.menu_sub .sub,
+.store_sub .sub,
+.responsibility_sub .sub,
+.msr_sub .sub,
+.new_sub .sub {padding: 1.2rem 0 1.5rem 0;}
+
+.coffee_sub .sub li,
+.menu_sub .sub li,
+.store_sub .sub li,
+.responsibility_sub .sub li,
+.msr_sub .sub li,
+.new_sub .sub li {margin-bottom: .2rem;}
+
+.coffee_sub .sub li:first-child,
+.menu_sub .sub li:first-child,
+.store_sub .sub li:first-child,
+.responsibility_sub .sub li:first-child,
+.msr_sub .sub li:first-child,
+.new_sub .sub li:first-child {margin-bottom: .8rem;}
+
+.coffee_sub .sub li:first-child a,
+.menu_sub .sub li:first-child a,
+.store_sub .sub li:first-child a,
+.responsibility_sub .sub li:first-child a,
+.msr_sub .sub li:first-child a,
+.new_sub .sub li:first-child a {font-weight: bold;}
+
+.coffee_sub .sub li a,
+.menu_sub .sub li a,
+.store_sub .sub li a,
+.responsibility_sub .sub li a,
+.msr_sub .sub li a,
+.new_sub .sub li a {color: #fff;}
+
+.coffee_sub .sub li a:hover,
+.menu_sub .sub li a:hover,
+.store_sub .sub li a:hover,
+.responsibility_sub .sub li a:hover,
+.msr_sub .sub li a:hover,
+.new_sub .sub li a:hover {text-decoration: underline;}
+
+.mobile_menu {display: none;}
+.close {display: none;}
+
+
+/* 리워드 */
+.rewards {background: linear-gradient(to right, #272727, #272727 25%, #d6c798 26%, #d6c798);}
+.rewards > div {position: relative; width: 54.5rem; margin: 0 auto;}
+.rewards > div:after {content:""; display: block; clear: both;}
+.rewards h2 {float: left; position: absolute; display: table; width: 20.3rem; height: 13rem; background: url(../images/star.png) no-repeat;}
+.rewards h2 span {display: table-cell; vertical-align: middle;}
+.rewards .info {padding: 2rem 0 0 17rem; height: 13rem; background: url(../images/bg_dot.jpg) no-repeat left bottom #d6c798; box-sizing: border-box;}
+.rewards .info span {font-size: 1.15rem; color: #333; letter-spacing: -1px;}
+.rewards .info p {display: block; padding: 0 0 .6rem; font-size: .7rem; color: #666; line-height: 1rem; letter-spacing: -0.5px;}
+.rewards .left {float: left;}
+.rewards .right {float: right;}
+.rewards .btm {clear: both; padding: 1.7rem 0 0;}
+.rewards .btm .btn {width: 12.75rem;}
+.rewards .top_btn {padding: 1.7rem 0 0;}
+
+
+/* 비주얼 */
+.visual {background: url(../images/bg_visual.png) no-repeat center top;}
+.visual > div {position: relative; width:100%; max-width: 54.5rem; height: 32.3rem; margin: 0 auto;}
+.visual > div div {position: absolute;}
+.visual > div div.img1 {left:0; top: 4rem; opacity: 0; animation: visual-4 1s forwards; animation-delay: 2.6s;}
+@keyframes visual-4 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.visual > div div.img1 img {display: block; padding: 0 0 2.3rem;}
+.visual > div div.img1 a {display: inline-block; border: 2px solid #3a62ad; text-align: center; line-height: 1.7rem; border-radius: 3px; font-size: 13px; color: #3a62ad; width: 6rem;}
+.visual > div div.img1 a:hover {background: #3262ad; color: #fff; transition: all .7s;}
+.visual > div div.img2 {left: 13%; top: 8.7rem; z-index: 3; opacity: 0; animation: visual-3 1s forwards; animation-delay: 1.9s;}
+@keyframes visual-3 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.visual > div div.img3 {left: 53%; top: 3.8rem; opacity: 0; animation: visual-2 1s forwards; animation-delay: 1.2s;}
+@keyframes visual-2 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.visual > div div.img4 {left: 49%; top: 15.75rem; z-index: 5;  opacity: 0; animation: visual-1 1s forwards; animation-delay: .5s;}
+@keyframes visual-1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* 카티 */
+.kati {background: url(../images/kati_bg.jpg) no-repeat; height: 28.6rem;}
+.kati > div {position: relative; width: 54.5rem; margin: 0 auto;}
+.kati_img {position: absolute; top: 4rem; left: 7rem;}
+.kati_txt {float: right; letter-spacing: -1px; margin: 8.85rem 7.5rem 0 0;}
+.kati_txt h3 {color: #44a7eb; font-size: 1.1rem;}
+.kati_txt h2 {color: #0854cb; font-size: 1.8rem; margin-bottom: .5rem;}
+.kati_txt p {color: #494949; font-size: .9rem; font-weight: bold;}
+.kati_txt a {margin-top: 2rem;}
+
+
+/* new arrival */
+.arrival {background: url(../images/arrival_bg.jpg) no-repeat; height: 20rem;}
+.arrival > div {position: relative; width: 54.5rem; margin: 0 auto; display: flex; justify-content: center;}
+.arrival .btn {margin: 15rem 0 0 0;}
+.arrival > div img {position: absolute; right: -6.4rem;}
+
+
+/* favorite*/
+.favorite {height: 40rem; background: url(../images/favorite_bg.jpg) no-repeat top left fixed;}
+.favorite > div {position: relative; width: 54.5rem; margin: 0 auto;}
+.favorite .fav_left {position: absolute; top: 5.2rem;}
+.favorite .fav_right {position: absolute; right: 0; top: 6rem;}
+.favorite .fav_right img {filter: drop-shadow(3px 5px 30px #111);}
+.favorite .btn {border-color: #fff; color: #fff;}
+.favorite p,
+.favorite h2 {color: #fff; font-weight: normal; letter-spacing: -1px;}
+.favorite p {font-size: .8rem; padding-top: .9rem;}
+.favorite h2 {padding-top: 2.5rem; font-size: 1.3rem;}
+.favorite .btn {margin-top: 2.3rem;}
+.favorite .btn:hover {background: #fff; color: #000;}
+
+
+/* reserve */
+.reserve {height: 29.5rem; background: url(../images/angela-bailey-Z7j_77gI55o-unsplash.jpg) no-repeat center top fixed;}
+.reserve > div {position: relative; width: 16.7rem; margin: 0 auto; display: flex; justify-content: center; transform-style: preserve-3d; transition: all .5s linear;}
+.reserve > div:hover {transform: rotateY(180deg);}
+.front {position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%); backface-visibility: hidden;}
+.front img {cursor: pointer; display: block;}
+.back {position: relative; width: 16.7rem; height: 16.7rem; overflow: hidden; margin-top: 6.5rem;}
+.back {backface-visibility: hidden; transform: rotateY(180deg);}
+.back a {position: absolute; z-index: 9; top: 75%; left: 50%; transform: translate(-50%, -50%);}
+
+
+
+/* store */
+.store {height: 20rem; background: url(../images/store_exp_img03.png) no-repeat center top; background-color: #e7e7e7;}
+.store > div {position: relative; width: 54.5rem; margin: 0 auto;}
+.store_left {float: left;}
+.store_left img:first-child {position: absolute; z-index: 1;}
+.store_left img:last-child {position: absolute; top: 7.5rem; left: 10rem; z-index: 2;}
+.store_right {float: right; padding-top: 5rem;}
+.store_right img {display: block;}
+.store_right img:first-child {padding-bottom: .8rem;}
+.store_right img:first-child,
+.store_right img:nth-child(2) {margin-right: 1.5rem;}
+.store_right a {margin-top: 1.5rem;}
+.store_right img:last-child {position: absolute; right: 0;}
+
+
+/* footer1 */
+.footer1 {height: 14.5rem; background: url(../images/footer_bg.jpg) no-repeat;}
+.footer1 > div {position: relative; width: 54.5rem; margin: 0 auto; display: flex; justify-content: space-between;}
+.corporate {float: left; padding-top: 1.8rem;}
+.corporate li a {font-size: .7rem; color: #fff;}
+.corporate li:first-child a {font-size: .75rem;}
+.corporate li a:hover {text-decoration: underline;}
+.footer1_mobile {display: none;}
+
+/* middle */
+.middle {height: 4rem; background: #282828; width: 100%;}
+.middle > div {position: relative; width: 54.5rem; margin: 0 auto; display: flex; justify-content: space-between; padding-top: 1rem;}
+
+/* footer2 */
+.footer2 {height: 12.8rem; background-color: #282828;}
+.footer2 > div {position: relative; width: 54.5rem; margin: 0 auto;}
+.footer2 > div ul {display: flex; justify-content: center; padding: 1.65rem 0 .7rem 0;}
+.footer2 > div ul li a {position: relative; padding: .65rem; float: left; font-size: .65rem; color: #fff;}
+.footer2 > div ul li:first-child a {color: #00b050; font-weight: bold;}
+.footer2 > div ul li ~ li a:after {content: ""; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 1px; height: .7rem; background: #393939;}
+.footer2 > div div {display: flex; justify-content: center; padding-bottom: 1.0rem;}
+.footer2 > div div a:nth-child(2) {margin: 0 .85rem;}
+.footer2 .btn {border-color: #fff; color: #fff;}
+.footer2 .btn:hover {background: #fff; color: #000;}
+.copyright {color: #999; font-size: .6rem; padding: 0 !important;}
+.copyright ul {overflow: hidden; padding: 0 !important;}
+.copyright ul li {margin: .6rem;}
+.footer2 p {font-size: .6rem; color: #999; text-align: center;}
+.footer2 ul li a:hover {text-decoration: underline;}
+
+
+/* 공통 */
+.btn {display: inline-block; min-width: 6.25rem; height: 1.9rem; line-height: 1.7rem; font-size: .7rem; color: #222; border: 2px solid #222; border-radius: 3px; text-align: center; box-sizing: border-box;}
+.btn.type1,
+.btn:hover {transition: all .7s; background: #222; color: #fff;}
+.type1:hover {background: transparent; color: #222;}
+

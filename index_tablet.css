@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+html {font-size: 20px;}
+body {font-size: 1rem;}
+
+header > div {width: 100%; margin: 0;}
+header > div h1 {padding: 1.1rem 0 1.2rem 1rem;}
+
+.mobile_menu {display: none;}
+.close {display: none;}
+
+
+/* 비주얼 */
+.visual > div div.img1 {left:1rem; top: 4rem;}
+.visual > div div.img2 {left: 17%;}
+.visual > div div.img2 img {width: 100%;}
+
+
+
+/* 리워드 */
+.rewards > div {width: 100%;}
+.rewards h2 {height: 16.75rem; background-position: right bottom; background-size: auto 100%;}
+.rewards h2 span {vertical-align: top; padding: 6.7rem 0 0 4rem;}
+.rewards .info {padding: .7rem 0 0 23rem; height: 16.75rem;}
+.rewards .left {float: none;}
+.rewards .right {float: none;}
+.rewards .top_btn {padding: .4rem 0 0;}
+.rewards .btm {padding: 1.4rem 0 0;}
+.rewards .btm .right {padding: .4rem 0 0;}
+
+
+/* kati */
+.kati {overflow: hidden;}
+
+
+/* arrival */
+.arrival {overflow: hidden;}
+.arrival > div {width: 100%;}
+.arrival > div img {position: absolute; right: -6rem; width: 25rem; margin-top: 2rem; }
+
+
+/* favorite */
+.favorite {padding: 0 30px; overflow: hidden;}
+.fav_right img {width: 80%; margin-top: 3rem;}
+
+
+/* store */
+.store {padding: 0 30px; overflow: hidden;}
+.store_right {width: 50%;}
+.store_right img:last-child {right: 6rem;}
+
+
+/* footer */
+.footer1, .middle, .footer2 {overflow: hidden;}
+.footer1 > div {width: 80%;}
+.middle > div {width: 100%;}
+.footer2 > div ul {width: 90%;}
